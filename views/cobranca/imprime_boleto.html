@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Boleto</title>  
+    <link href="{{=URL(c='static', f='css/boletos.css')}}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="bol_container">
+            <table>                     
+                <thead>
+                    <tr>
+                        <td colspan="2">
+                            <table class="bol_big_font bol_">
+                                <tr>
+                                    <td class="bol_border_right"><figure id="bol_logo">
+                                        <img src="{{=URL(c='static', f='images/banrisul.png')}}" /></figure></td>
+                                    <td class="bol_border_right"><span>041-8</span></td>
+                                    <td><span>{{=gera_linha}}</span></td>
+                                </tr>
+                            </table>                    
+                        </td>               
+                    </tr>                       
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Local de pagamento <br /><span>ATÉ O VENCIMENTO PAGÁVEL EM QUALQUER BANCO</span> <span class="bol_float bol_big"><strong>BDL-CDB</strong></span></td>
+                        <td class="bol_padding_right bol_fundo_valor">Vencimento <span><strong>00/00/0000</strong></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cedente <span></span> <span class="bol_float">CGC  <span>99.999.999/9999-99</span></span></td>
+                        <td>Agência/Cód. Cedente <span></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="bol_tabela_interna">
+                                <tr>
+                                    <td class="bol_border_right">Data documento <br /><span></span></td>
+                                    <td class="bol_border_right">Número documento <span></span></td>
+                                    <td class="bol_border_right">Espécie doc. <span></span></td>
+                                    <td class="bol_border_right">Aceite <span></span></td>
+                                    <td>Data processamento <span></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Nosso número <span></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="bol_tabela_interna">
+                                <tr>
+                                    <td class="bol_border_right bol_padding_right">Uso Banco <span></span></td>
+                                    <td class="bol_border_right">Carteira <span></span></td>
+                                    <td class="bol_border_right">Espécie R$ <span></span></td>
+                                    <td class="bol_border_right bol_padding_right">Quantidade <span></span></td>
+                                    <td>Valor <span></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="bol_fundo_valor">(=) Valor do documento <span></span></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">Instruções <strong>(Todas as informações deste bloqueto são de exclusiva responsabilidade do cedente)</strong> <span></span></td>
+                        <td>(-) Desconto/abatimento</td>
+                    </tr>
+                    <tr>
+                        <td class="bol_paddig_bottom"></td>
+                    </tr>
+                    <tr>
+                        <td>(+) Mora/multa</td>
+                    </tr>
+                    <tr>
+                        <td class="bol_paddig_bottom"></td>
+                    </tr>
+                    <tr>
+                        <td class="bol_fundo_valor">(=) Valor cobrado</td>
+                    </tr>                   
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td colspan="2">
+                            <table class="bol_tabela_interna">
+                                <tr>
+                                    <td class="bol_padding_right2">Sacado <span></span></td>
+                                    <td colspan="2">CNPJ/CPF <span></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="bol_sacador">
+                                    <td colspan="2">Sacador/Avalista <span></span></td>
+                                    <td>Cód. de baixa <span></span></td>
+                                </tr>
+                            </table>                        
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="bol_cod_barras"><img src="{{=URL('static', 'barcode')}}/{{=img_barras}}"></div><span class="bol_float">Autenticação mecânica/<strong>FICHA DE COMPENSAÇÃO</strong></span></td>
+                    </tr>
+                </tfooter>                  
+            </table>
+        </div>
+    </body>
+</html>

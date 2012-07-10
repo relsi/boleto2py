@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+<br />
+
+<a href="{{=URL(c='cobranca', f='imprime_boleto')}}">Imprimir Boleto</a>
