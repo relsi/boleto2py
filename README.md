@@ -12,7 +12,9 @@ Estrutura do módulo
 -------------------
 
 boleto2py/
+
 boleto2py/gerador.py
+
 boleto2py/banrisul.py
 
 gerador.py possui algumas funcionalidades comuns aos boletos, banrisul.py possui funcionalidades específicas
@@ -33,5 +35,8 @@ Referências externas
 Além do pyboletos, utilizei as seguintes referências
 
 http://informacaocomdiversao.blogspot.com/2009/01/entendendo-como-formada-linha-digitvel.html
+
 https://github.com/klawdyo/PHP-Object-Boleto
+
+http://thiagosm.wordpress.com/2008/06/07/codigo-de-barra-em-python/
 
