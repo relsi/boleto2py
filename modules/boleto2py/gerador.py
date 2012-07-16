@@ -31,6 +31,7 @@ def modulo10(num):
 
     return modulo10
 
+
 def modulo11(num, base=9, r=0):
     soma = 0
     fator = 2

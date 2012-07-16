@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 import gerador
 
-#dados fornecidos pela documentação, em produção mudar para os dados do emissor
+#dados fornecidos no manual, alterar para os dados do cedente
 banco = "041"
 ag_cedente = "1102"
 cod_cedente = "9000150"
 moeda = "9"
 especie = "R$"
 carteira = "2"
+
 
 def gera_linha_digitavel(cod_barra):
 
@@ -29,7 +30,7 @@ def gera_linha_digitavel(cod_barra):
 
         linha_digitavel = campo_1+campo_2+campo_3+dac+fat_vcto+valor
 
-        return linha_digitavel
+        return linha_digitavel 
 
 def gera_cod_barras(valor, nosso_numero, data_vencimento):
     nosso_numero = gerador.formata_numero(nosso_numero, 8)
@@ -51,6 +52,23 @@ def gera_cod_barras(valor, nosso_numero, data_vencimento):
 
     ofator_vencimento = gerador.fator_vencimento(data_vencimento)
 
+    digitos_calc_geral = "%1s%1s%4s%7s%8s%2s" %('2','1',ag_cedente,cod_cedente,nosso_numero,'40')
+    
+    def calc_nc_g(posicoes):
+        digito_1 = gerador.modulo10(posicoes)
+        digito_2 = gerador.modulo11(str(posicoes)+str(digito_1), 7, 1)
+        if digito_2 == 1:
+            digito_1 += 1
+            digito_2 = gerador.modulo11(str(posicoes)+str(digito_1), 7, 1)
+            digito_2 = 11 - digito_2
+        elif digito_2 == 0:
+            digito_2 = digito_2
+        else:
+            digito_2 = 11 - digito_2
+        return [digito_1, digito_2]
+
+    digito_nc = calc_nc_g(digitos_calc_geral)
+
     calc_dac = "%3s%1s%4s%10s%1s%1s%4s%7s%8s%2s%1s%1s" % (
         banco, 
         moeda, 
@@ -62,8 +80,8 @@ def gera_cod_barras(valor, nosso_numero, data_vencimento):
         cod_cedente, 
         nosso_numero, 
         '40', 
-        nc_1, 
-        nc_2
+        digito_nc[0],
+        digito_nc[1]
     )
 
     resto_dac = gerador.modulo11(calc_dac, 9, 1)
@@ -84,8 +102,7 @@ def gera_cod_barras(valor, nosso_numero, data_vencimento):
         cod_cedente,
         nosso_numero,
         '40',
-        nc_1,
-        nc_2
+        digito_nc[0],
+        digito_nc[1]
     )
-
     return cod_barra
