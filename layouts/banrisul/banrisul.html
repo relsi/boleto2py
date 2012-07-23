@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+		<meta charset="utf-8">
+		<title>Boleto</title>
+		<link rel="stylesheet" href="boleto.css" type="text/css" media="all" />			
+		<link rel="stylesheet" href="impressao.css" type="text/css" media="print" />
+    </head>
+    <body>
+		<div id="bol_container">
+			<table>						
+				<thead>
+					<tr>
+						<td colspan="2">
+							<table class="bol_big_font">
+								<tr>
+									<td class="bol_border_right"><figure id="bol_logo"><img src="imagens/banrisul.png" /></figure></td>
+									<td class="bol_border_right"><span>041-8</span></td>
+									<td><span>00000.00000 00000.000000 00000.000000 0 00000000000000</span></td>
+								</tr>
+							</table>					
+						</td>				
+					</tr>						
+				</thead>
+				<tbody>
+					<tr>
+						<td>Local de pagamento<br /><span class="bol_fonte_span">ATÉ O VENCIMENTO PAGÁVEL EM QUALQUER BANCO</span> <span class="bol_float bol_big" id="bol_bdl"><strong>BDL</strong></span></td>
+						<td class="bol_padding_right bol_fundo_valor">Vencimento<br /><span class="bol_fonte_span"><strong>15/08/2000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Cedente<br /><span class="bol_fonte_span">Nome do Cedente</span> <span class="bol_float">CGC <span class="bol_fonte_span">99.999.999/9999-99</span></span></td>
+						<td>Agência/Cód. Cedente<br /><span class="bol_fonte_span">0430</span></td>
+					</tr>
+					<tr>
+						<td>
+							<table class="bol_tabela_interna">
+								<tr>
+									<td class="bol_border_right">Data documento<br /><span class="bol_fonte_span">11/07/2012</span></td>
+									<td class="bol_border_right">Número documento<br /><span class="bol_fonte_span">000000000</span></td>
+									<td class="bol_border_right">Espécie doc.<br /><span class="bol_fonte_span"></span></td>
+									<td class="bol_border_right">Aceite<br /><span class="bol_fonte_span">A</span></td>
+									<td>Data processamento<br /><span class="bol_fonte_span">01/06/2012</span></td>
+								</tr>
+							</table>
+						</td>
+						<td>Nosso número<br /><span class="bol_fonte_span">0000000</span></td>
+					</tr>
+					<tr>
+						<td>
+							<table class="bol_tabela_interna">
+								<tr>
+									<td class="bol_border_right bol_padding_right">Uso Banco<br /><span class="bol_fonte_span"></span></td>
+									<td class="bol_border_right">Carteira<br /><span class="bol_fonte_span">LR</span></td>
+									<td class="bol_border_right">Espécie<br /><span class="bol_fonte_span">REAL</span></td>
+									<td class="bol_border_right bol_padding_right">Quantidade<br /><span class="bol_fonte_span"></span></td>
+									<td>Valor<br /><span class="bol_fonte_span"></span></td>
+								</tr>
+							</table>
+						</td>
+						<td class="bol_fundo_valor">( = ) Valor do documento<br /><span class="bol_fonte_span">125,40</span></td>
+					</tr>
+					<tr>
+						<td rowspan="5">Instruções <strong>(Todas as informações deste bloqueto são de exclusiva responsabilidade do cedente)</strong><br /> <ul><li class="bol_fonte_span">Sr. Caixa, não receber após o vencimento.</li></ul></td>
+						<td>( - ) Desconto/abatimento<br /><span class="bol_fonte_span">2,40</span></td>
+					</tr>
+					<tr>
+						<td class="bol_paddig_bottom"></td>
+					</tr>
+					<tr>
+						<td>( + ) Mora/multa<br /><span class="bol_fonte_span">125,40</span></td>
+					</tr>
+					<tr>
+						<td class="bol_paddig_bottom"></td>
+					</tr>
+					<tr>
+						<td class="bol_fundo_valor">( = ) Valor cobrado<br /><span class="bol_fonte_span">123,00</span></td>
+					</tr>					
+				</tbody>
+				<tfooter>
+					<tr>
+						<td colspan="2">
+							<table class="bol_tabela_interna">
+								<tr>
+									<td class="bol_padding_right2">Sacado<br /><span class="bol_fonte_span">Nome do Sacado<br />Endereço do Sacado</span></td>
+									<td colspan="2">CNPJ/CPF <span class="bol_fonte_span">000000000000</span></td>
+									<td></td>
+								</tr>
+								<tr class="bol_sacador">
+									<td colspan="2">Sacador/Avalista <span class="bol_fonte_span"></span></td>
+									<td>Cód. de baixa <span class="bol_fonte_span"></span></td>
+								</tr>
+							</table>						
+					</tr>
+					<tr>
+						<td colspan="2"><div class="bol_cod_barras"><img src="imagens/cod_barras.png" /></div><span class="bol_float">Autenticação mecânica/<strong>FICHA DE COMPENSAÇÃO</strong></span></td>
+					</tr>
+				</tfooter>					
+			</table>
+		</div>
+    </body>
+</html>
+
+
+

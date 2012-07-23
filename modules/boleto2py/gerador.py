@@ -22,12 +22,12 @@ def modulo10(num):
             peso = 1
         else:
             peso = 2
-
-    resto10 = soma % 10
-    if resto10 == 0:
-        modulo10 = 0
-    else:
-        modulo10 = 10 - resto10
+    
+        resto10 = soma % 10
+        if resto10 == 0:
+            modulo10 = 0
+        else:
+            modulo10 = 10 - resto10
 
     return modulo10
 
@@ -61,13 +61,13 @@ def fator_vencimento(data_vcto):
     fator = delta.days + 1000
     return fator
 
-def getcodbarra(valor, posX=0, posY=0, height = 50):
+def getcodbarra(valor, posX=0, posY=0, height = 55):
     # padrão 2 por 5 intercalado ( utilizado em boletos bancários )
     padrao = ('00110', '10001', '01001', '11000', '00101',
               '10100', '01100', '00011', '10010', '01010')
 
     # criando imagem
-    imagem = Image.new('RGB',(400,60),'white')
+    imagem = Image.new('RGB',(500,60),'white')
     draw = ImageDraw.Draw(imagem)
 
     # verificando se o conteudo para gerar barra é impar, se for,

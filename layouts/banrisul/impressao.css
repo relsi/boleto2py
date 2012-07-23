@@ -1,0 +1,203 @@
+/* Folha de Estilos para Boletos */
+
+/* Estilos para zerar navegadores */
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+}
+
+/* Container */
+
+div#bol_container {
+	font-family: Arial, Verdana, Geneva, sans-serif;	
+	font-size: small;
+	width: 700px;
+	margin: 2px 0px 0px 5px;
+}
+
+/* Estilos do Recibo */
+
+div#bol_header {
+	border-bottom: 2px solid #165480;
+	padding-bottom: 10px;
+	font-size: 90%;
+}
+
+h2#bol_recibo_morador {
+	font-size: 95%;
+	width: 300px;
+	margin: 10px auto;
+}
+
+p#bol_recibo_end {
+	width: 300px;
+	font-size: 100%;
+	margin: 0 auto 10px auto;
+}
+
+div#bol_footer {
+	padding-top: 20px;
+	margin-bottom: 25px;
+	border-top: 2px dashed #165480;
+	border-bottom: 2px dashed #000;
+}
+
+div#bol_footer h2 {
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+
+div#bol_footer p {
+	font-size: 85%;
+}
+
+p.bol_footer_font {
+	font-size: 100%;
+}
+
+span.bol_recibo_item {
+	margin-right: 20px;
+}
+
+span.bol_recibo_valor {
+	float: right;
+}
+
+div#bol_footer ul {
+	height: 130px;
+	column-width: 200px;
+    -moz-column-width: 200px;
+    -webkit-column-width: 200px;
+	-moz-column-count: 2;
+    -webkit-column-count: 2; 
+	column-gap: 30px;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+	margin: 15px auto;
+	padding: 10px;
+	border: 2px solid #165480
+}
+
+div#bol_footer ul li {
+	list-style: none;
+	margin-bottom: 5px;
+	font-size: 80%;
+}
+
+p#bol_recibo_linha {
+	position: relative;
+	right: -580px;
+}
+
+/* Estilos do Boleto */
+
+div#bol_container table {
+	font-family: "Times New Roman", serif;		
+	font-size: 10px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+
+div#bol_container table tr, div#bol_container table td {
+	border-collapse: collapse;
+	border: 1px solid #ccc;	
+}
+
+div#bol_container table td {
+	padding: 1px 2px 0px 2px;
+}
+
+div#bol_container table.bol_big_font {
+	font-size: 175%;
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: -1px;
+	margin-top: -2px;
+	padding-top: 5px;
+}
+
+div#bol_container table.bol_big_font #bol_logo {
+	width: 85%;
+	width: 85%;
+}
+
+div#bol_container table td .bol_fonte_span {
+	font-size: 110%;
+}
+
+div#bol_container table.bol_big_font td {
+	padding: 0px 20px 0px 5px;
+	border: 1px solid transparent;
+}
+
+div#bol_container table td.bol_fundo_valor {
+	background: #ddd;
+}
+
+div#bol_container table.bol_tabela_interna, div#bol_container table.bol_tabela_interna3 {
+	width: 100%;
+	margin-bottom: -13px;
+	margin-top: -3px;
+	margin-left: -3px;
+	border-right: 1px solid transparent;
+}
+
+div#bol_container table.bol_tabela_interna td {
+	border: 1px solid transparent;
+	padding-right: 40px;
+}
+
+div#bol_container table.bol_tabela_interna td.bol_padding_right2 {
+	padding-right: 400px;
+}
+
+
+div#bol_container table td.bol_border_right {
+	border-right: 1px solid #ccc;
+}
+
+table span.bol_float {
+	float: right;
+}
+
+table span.bol_big {
+	font-size: 14pt;
+}
+
+table span#bol_bdl {
+	margin-top: -13px;
+}
+
+div#bol_container table td.bol_padding_right {
+	padding-right: 100px;
+}
+
+div#bol_container table td.bol_paddig_bottom {
+	padding-bottom: 25px;
+}
+
+div#bol_container table tr.bol_sacador {
+	border-right: 1px solid transparent;
+}
+
+div#bol_container table tr.bol_sacador td {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+div#bol_container table div.bol_cod_barras {
+	float: left;
+}
+
+div#bol_container table div.bol_cod_barras img {
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+

@@ -2,13 +2,20 @@
 import gerador
 
 #dados fornecidos no manual, alterar para os dados do cedente
+"""
 banco = "041"
 ag_cedente = "1102"
 cod_cedente = "9000150"
 moeda = "9"
 especie = "R$"
 carteira = "2"
-
+"""
+banco = "041"
+ag_cedente = "0045"
+cod_cedente = "0641420"
+moeda = "9"
+especie = "R$"
+carteira = "2"
 
 def gera_linha_digitavel(cod_barra):
 
@@ -42,6 +49,8 @@ def gera_cod_barras(valor, nosso_numero, data_vencimento):
             digito_1 += 1
             digito_2 = gerador.modulo11(str(num)+str(digito_1), 7, 1)
             digito_2 = 11 - digito_2
+        elif digito_2 == 0:
+            digito_2 = digito_2
         else:
             digito_2 = 11 - digito_2
         return [digito_1, digito_2]
@@ -105,4 +114,6 @@ def gera_cod_barras(valor, nosso_numero, data_vencimento):
         digito_nc[0],
         digito_nc[1]
     )
-    return cod_barra
+    dv_nosso_num = str(nc_1)+str(nc_2)
+    return [cod_barra, nosso_numero, dv_nosso_num]
+
