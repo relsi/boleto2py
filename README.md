@@ -28,7 +28,7 @@ Para criar um novo boleto, basta importar o arquivo gerador.py e criar os digito
 Exemplo de uso
 ---------
 
-'''python
+```python
 def imprime_boleto_banrisul():
     import boleto2py.banrisul as banrisul
     import boleto2py.gerador as gerador
@@ -44,7 +44,7 @@ def imprime_boleto_banrisul():
     tipo = 'gif'
     cod_barra_boleto.save('applications/boleto2py/static/barcode/%s.%s'%(barras[0],tipo), tipo)
     img_barras = '%s.%s'%(barras[0],tipo)
-'''
+```
 
 Bancos Homologados até o momento
 --------------------------------
