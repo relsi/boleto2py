@@ -19,6 +19,77 @@ div#bol_container {
 	margin: 5px 0px 0px 5px;
 }
 
+/* Estilos do Recibo */
+
+div#bol_header {
+	border-bottom: 2px solid #165480;
+	padding-bottom: 10px;
+}
+
+div#bol_header figure {
+	float: left;
+	margin-right: 10px;
+}
+
+h2#bol_recibo_morador {
+	width: 300px;
+	margin: 20px auto;
+}
+
+p#bol_recibo_end {
+	width: 300px;
+	font-size: 120%;
+	margin: 0 auto 30px auto;
+}
+
+div#bol_footer {
+	padding-top: 20px;
+	margin-bottom: 25px;
+	border-top: 2px dashed #165480;
+	border-bottom: 2px dashed #000;
+}
+
+div#bol_footer h2 {
+	margin-bottom: 15px;
+}
+
+p.bol_footer_font {
+	font-size: 120%;
+}
+
+span.bol_recibo_item {
+	margin-right: 20px;
+}
+
+span.bol_recibo_valor {
+	float: right;
+}
+
+div#bol_footer ul {
+	height: 173px;
+	column-width: 400px;
+    -moz-column-width: 400px;
+    -webkit-column-width: 400px;
+	-moz-column-count: 2;
+    -webkit-column-count: 2; 
+	column-gap: 50px;
+    -moz-column-gap: 50px;
+    -webkit-column-gap: 50px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 2px solid #165480
+}
+
+div#bol_footer ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+p#bol_recibo_linha {
+	position: relative;
+	right: -760px;
+}
+
 /* Estilos do Boleto */
 
 div#bol_container table {
@@ -85,6 +156,7 @@ div#bol_container table td.bol_border_right {
 
 table span.bol_float {
 	float: right;
+
 }
 
 table span.bol_big {

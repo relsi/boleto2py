@@ -16,7 +16,7 @@ div#bol_container {
 	font-family: Arial, Verdana, Geneva, sans-serif;	
 	font-size: small;
 	width: 700px;
-	margin: 2px 0px 0px 5px;
+	margin: -5px 0px 0px 5px;
 }
 
 /* Estilos do Recibo */
@@ -30,7 +30,7 @@ div#bol_header {
 h2#bol_recibo_morador {
 	font-size: 95%;
 	width: 300px;
-	margin: 10px auto;
+margin: 10px auto 0 auto;
 }
 
 p#bol_recibo_end {
@@ -193,10 +193,11 @@ div#bol_container table tr.bol_sacador td {
 
 div#bol_container table div.bol_cod_barras {
 	float: left;
+    width: 65%;
 }
 
 div#bol_container table div.bol_cod_barras img {
-	width: 90%;
+
 	margin-bottom: 10px;
 }
 
