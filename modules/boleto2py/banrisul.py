@@ -2,20 +2,13 @@
 import gerador
 
 #dados fornecidos no manual, alterar para os dados do cedente
-"""
 banco = "041"
 ag_cedente = "1102"
 cod_cedente = "9000150"
 moeda = "9"
 especie = "R$"
 carteira = "2"
-"""
-banco = "041"
-ag_cedente = "0045"
-cod_cedente = "0641420"
-moeda = "9"
-especie = "R$"
-carteira = "2"
+
 
 def gera_linha_digitavel(cod_barra):
 

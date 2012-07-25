@@ -140,6 +140,12 @@ div#bol_container table td.bol_fundo_valor {
 	background: #ddd;
 }
 
+div#bol_container table td.bol_descontos {
+	height: 25px;
+}
+
+
+
 div#bol_container table.bol_tabela_interna, div#bol_container table.bol_tabela_interna3 {
 	width: 100%;
 	margin-bottom: -13px;
